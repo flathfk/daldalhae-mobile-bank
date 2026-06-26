@@ -1,0 +1,21 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Gradle / Spring Boot
+backend-spring-api/build/
+backend-spring-api/.gradle/
+*.jar
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# env
+.env
+.env.local
