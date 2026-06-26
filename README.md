@@ -3,6 +3,7 @@
 > 작성: 임소라 / 2026.06.26
 > 환경: GCP VM 단일 인스턴스, Cloudflare Tunnel로 외부 HTTPS 노출
 
+도메인: https://centered-cheaper-proposal-blades.trycloudflare.com/
 
 ## 1. 분산 아키텍처 및 자기화 요약
 
