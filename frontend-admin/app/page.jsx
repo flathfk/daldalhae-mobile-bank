@@ -124,7 +124,7 @@ export default function AdminPage() {
 
           <section className="hero-card">
             <div>
-              <span className="hero-label">Google-style Admin UI</span>
+              <span className="hero-label">DALDALHAE Admin UI</span>
               <h2>카페 충전 운영 데이터를 한 화면에서 관리합니다</h2>
               <p>Spring Boot API, MariaDB/JPA, Redis 세션·캐시·감사 로그를 기준으로 운영 상태를 확인합니다.</p>
             </div>
