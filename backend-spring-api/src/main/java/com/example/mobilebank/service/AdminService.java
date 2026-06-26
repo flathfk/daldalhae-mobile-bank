@@ -81,6 +81,6 @@ public class AdminService {
     public Object closeAccount(Long accountId) {
         Account a = accountRepository.findById(accountId).orElseThrow(() -> new IllegalArgumentException("ACCOUNT_NOT_FOUND"));
         a.close(); redis.evictDashboard(); redis.evictAccount(a.getUser().getId()); redis.audit("ADMIN_CLOSE_ACCOUNT accountId=" + accountId);
-        return Map.of("message", "계좌 해지 완료");
+        return Map.of("message", "지갑 해지 완료");
     }
 }

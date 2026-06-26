@@ -31,7 +31,7 @@ public class AuthService {
     public AuthResponse register(RegisterRequest r) {
         if (userRepository.existsByUsername(r.username())) throw new IllegalArgumentException("USERNAME_ALREADY_EXISTS");
         User user = userRepository.save(new User(r.username(), passwordEncoder.encode(r.password()), r.name(), UserRole.USER));
-        accountRepository.save(new Account(user, makeAccountNumber(user.getId()), new BigDecimal("1000000")));
+        accountRepository.save(new Account(user, makeAccountNumber(user.getId()), new BigDecimal("10000")));
         return token(user);
     }
 

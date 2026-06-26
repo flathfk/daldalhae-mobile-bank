@@ -78,7 +78,7 @@ export default function MobileViewPage() {
         <section className="balance-card">
           <div className="card-top"><span>내 달달해 지갑</span><b>{account.data?.status || "-"}</b></div>
           <h2>{account.isLoading ? "조회 중" : money(account.data?.balance)}</h2>
-          <p>{account.data?.accountNumber || "계좌 정보를 불러오는 중입니다"}</p>
+          <p>{account.data?.accountNumber || "지갑 정보를 불러오는 중입니다"}</p>
           <div className="quick-actions">
             <a href="/action">선물</a><a href="/action">충전</a><a href="/action">결제</a>
           </div>
